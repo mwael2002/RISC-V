@@ -4,6 +4,7 @@ Implementation of a 32-bit single-cycle microarchitecture RISC-V processor based
 The simulation was performed on Modelsim.
 ## Main Modules
 ### 1- ALU
+![Screenshot (285)](https://user-images.githubusercontent.com/102371006/224100404-f1938d91-d56d-44b3-8e47-51e2041fcc7b.png)
 ### 2- Program counter calculation circuit
 ### 3- Register File
 ### 4- Data Memory
