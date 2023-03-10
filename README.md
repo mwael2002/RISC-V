@@ -18,4 +18,7 @@ The simulation was performed on Modelsim to run Fibonacci series program written
 ## Other modules
 ### 1- Sign extension unit
 ### 2- (32-1) Multiplexer
-## Fibonacci series program:
+## Fibonacci series program
+![Screenshot (290)](https://user-images.githubusercontent.com/102371006/224440158-1febc64f-abd2-439e-b493-f41b562199a5.png)
+## Modelsim Results
+![Screenshot (281)](https://user-images.githubusercontent.com/102371006/224440190-656529c8-9807-44c1-aac6-689438f7d744.png)
