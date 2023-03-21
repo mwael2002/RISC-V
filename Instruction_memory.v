@@ -7,8 +7,11 @@ output [31:0] Read_Data;
 
 reg [31:0] IM [0:63];
 
-initial $readmemh("Fibonacci_program.txt",IM) ;
-
+initial begin
+$readmemh("Counter.txt",IM) ;
+//$readmemh("Fibonacci_program.txt",IM) ;
+end
+  
 assign Read_Data = IM[Read_Address >> 2'd2];
 
 endmodule
