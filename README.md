@@ -23,3 +23,4 @@ The synthesis was done on Intel® Quartus Prime and implemented on Cyclone® IV 
 ## Modelsim Results of Fibonacci series:
 ![Screenshot (281)](https://user-images.githubusercontent.com/102371006/224440190-656529c8-9807-44c1-aac6-689438f7d744.png)
 ## Modelsim Results of Counter:
+![Screenshot (302)](https://user-images.githubusercontent.com/102371006/226504580-5b725a8a-2bb6-4960-b5e8-f5a3fd0b6360.png)
