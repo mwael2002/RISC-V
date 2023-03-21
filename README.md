@@ -28,4 +28,5 @@ Testing on FPGA through Bluetooth module connected with it and mobile phone via 
 ![Screenshot (302)](https://user-images.githubusercontent.com/102371006/226504580-5b725a8a-2bb6-4960-b5e8-f5a3fd0b6360.png)
 
 ## Testing on FPGA:
-![34A1A40A-5128-4971-9E5B-91C6AAEB1EA6](https://user-images.githubusercontent.com/102371006/226568911-fe5055fd-9d2a-405c-a106-7a58fbc4d5c9.jpeg)
+![photo_2023-03-21_13-37-32](https://user-images.githubusercontent.com/102371006/226595406-62b60756-4962-4bd1-a480-b504e11f136a.jpg)
+
