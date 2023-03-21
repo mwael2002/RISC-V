@@ -3,6 +3,7 @@
 Implementation of a 32-bit single-cycle microarchitecture RISC-V processor based on Harvard Architecture using Verilog HDL.
 The simulation was performed on Modelsim to run two programs the first is Fibonacci series & second is counter written with C language and compiled into machine code. 
 The synthesis was done on Intel® Quartus Prime and implemented on Cyclone® IV FPGA.
+Testing on FPGA through Bluetooth module connected with it and mobile phone via UART module.
 ![Screenshot (285)](https://user-images.githubusercontent.com/102371006/224100404-f1938d91-d56d-44b3-8e47-51e2041fcc7b.png)
 
 ## RTL view of Top Module:
@@ -25,3 +26,6 @@ The synthesis was done on Intel® Quartus Prime and implemented on Cyclone® IV 
 
 ## Modelsim Results of Counter:
 ![Screenshot (302)](https://user-images.githubusercontent.com/102371006/226504580-5b725a8a-2bb6-4960-b5e8-f5a3fd0b6360.png)
+
+## Testing on FPGA:
+![34A1A40A-5128-4971-9E5B-91C6AAEB1EA6](https://user-images.githubusercontent.com/102371006/226568911-fe5055fd-9d2a-405c-a106-7a58fbc4d5c9.jpeg)
