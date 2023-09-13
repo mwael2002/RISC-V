@@ -11,7 +11,7 @@ initial begin
   $readmemh("Fibonacci_program.txt",IM) ;
 end
   
-assign Read_Data = IM[Read_Address >> 2'd2];
+  assign Read_Data = IM[Read_Address[31:2]];
 
 endmodule
 
