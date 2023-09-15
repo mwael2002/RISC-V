@@ -15,16 +15,17 @@ case(opcode)
 3'b000:R=A+B;
 3'b001:R=A<<B;
 3'b010:R=A-B;
+3'b011:R=B;
 3'b100:R=A^B;
 3'b101:R=A>>B;
 3'b110:R=A|B;
 3'b111:R=A&B;
-default:R=3'b000;
+default:R=32'b000;
 
 endcase
 end
 
-assign OUT=R;
+assign OUT=R[31:0];
 assign zero_flag=~(|R);
 assign sign_flag=R[32];
 

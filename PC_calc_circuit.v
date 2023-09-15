@@ -1,9 +1,8 @@
-module PC_calc_circuit(clk,areset,load,PCSrc,ImmExt,program_counter);
+module PC_calc_circuit(clk,areset,load,PCSrc,ImmExt,PC);
 
 input clk,areset,load,PCSrc;
 input [31:0] ImmExt;
-output [31:0] program_counter;
-reg [31:0] PC;
+output reg [31:0] PC;
 wire [31:0] PC_Next,PC_Plus4,PC_Target;
 
 MUX_32 MUX_PC(.IN0(PC_Plus4),.IN1(PC_Target),.sel(PCSrc),.OUT(PC_Next));
@@ -31,8 +30,5 @@ end
 
 assign PC_Target=PC+ImmExt;
 assign PC_Plus4=PC+32'h00000004;
-
-
-assign program_counter=PC;
 
 endmodule

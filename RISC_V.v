@@ -10,7 +10,7 @@ wire [7:0] Control_signals;
 
 
 PC_calc_circuit pc_circuit(.clk(clk),.areset(areset),.load(Control_signals[0]),.PCSrc(Control_signals[1]),
-.ImmExt(ImmExt),.program_counter(PC));
+.ImmExt(ImmExt),.PC(PC));
 
 
 Instruction_memory ROM(.Read_Address(PC),.Read_Data(Instr));
@@ -33,7 +33,7 @@ MUX_32 MUX0(.IN0(SrcC),.IN1(ImmExt),.sel(Control_signals[4]),.OUT(SrcB));
 ALU_32_bit ALU0(.A(SrcA),.B(SrcB),.opcode(ALUControl),
 .OUT(ALUResult),.zero_flag(zero_flag),.sign_flag(sign_flag));
 
-Data_memory RAM(.Address(ALUResult[31:2]),.Write_Data(SrcC),.Write_Enable(Control_signals[3]),.clk(clk),
+Data_memory RAM(.Address({1'b0,1'b0,ALUResult[31:2]}),.Write_Data(SrcC),.Write_Enable(Control_signals[3]),.clk(clk),
 .Read_Data(Read_Data));
 
 

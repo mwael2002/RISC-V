@@ -5,27 +5,10 @@ input [2:0] funct3;
 input op5,funct7;
 output [2:0] ALUControl;
 
-reg op5_funct7;
+wire op5_funct7;
 reg [2:0] sel_10,sel;
 
-always@(*)
-begin
-
-if(op5==1&&funct7==1)
-begin
-
-op5_funct7=1;
-
-end
-
-else 
-begin
-
-op5_funct7=0;
-
-end
-
-end
+assign op5_funct7=funct7&op5;
 
 
 always@(*)
@@ -34,20 +17,20 @@ begin
 if(funct3==3'b000)
 begin
 
-if(op5_funct7)
-begin
+   if(op5_funct7)
+   begin
 
-sel_10=3'b010;
+   sel_10=3'b010;
 
-end
+   end
 
-else
-begin
+   else
+   begin
 
-sel_10=3'b000;
+   sel_10=3'b000;
 
-end
-end
+   end
+   end
 
 else if(funct3==3'b010 || funct3==3'b011)
 begin
